@@ -9,13 +9,13 @@ def find_element_index(array, value_to_find)
 end
 
 def find_max_value(array)
- array.length.times { |index|
-    if array[index] > array[index+1]
+  max=array[0]
+  array.length.times { |index|
+    if array[index] >= max
       max = array[index]
-    else
-      max = array[index+1]
     end
-    }
+  }
+  return max
 end
 
 def find_min_value(array)
