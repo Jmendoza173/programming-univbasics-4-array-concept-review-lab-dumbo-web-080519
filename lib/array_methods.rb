@@ -9,15 +9,11 @@ def find_element_index(array, value_to_find)
 end
 
 def find_max_value(array)
-  def find_element_index(array, value_to_find)
-  
-  array.length.times { |index|
+ array.length.times { |index|
     if array[index] == value_to_find
       return index
     end
     }
-    return nil
-end
 end
 
 def find_min_value(array)
